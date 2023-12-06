@@ -1,0 +1,18 @@
+﻿<Window x:Class="CreativeTask.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CreativeTask.View" xmlns:viewmodel="clr-namespace:CreativeTask.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
+        mc:Ignorable="d" Height="250" Width="200" ScrollViewer.VerticalScrollBarVisibility="Disabled" MinWidth="200" MaxWidth="200" MinHeight="250" MaxHeight="250" ResizeMode="NoResize" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Title="Create Excel">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Content="Запустить" Click="OnRunButtonClick" Grid.Row="0" Margin="15,15,15,15" Grid.ColumnSpan="3"/>
+        <Button Content="Закрыть" Click="OnCloseButtonClick" Grid.Row="1" Margin="15,15,15,15" Grid.ColumnSpan="3"/>
+        <Button Content="INFO" Click="OnInfoButtonClick" Grid.Row="2" Margin="15,15,15,15" Grid.ColumnSpan="3"/>
+    </Grid>
+</Window>
